@@ -1,0 +1,6 @@
+name: PartySystem
+version: '${project.version}'
+main: de.nms.partysystem.PartySystem
+api-version: '1.20'
+commands:
+  party:
