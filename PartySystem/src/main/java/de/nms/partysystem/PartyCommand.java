@@ -147,9 +147,10 @@ public class PartyCommand implements CommandExecutor {
                         return true;
                     }
                     PartyAPI.getPartyMembers(player).forEach(message -> {
-                        player.sendMessage(cp + message);
+                        player.sendMessage(cp + message.getName());
 
                     });
+                    return true;
                 }
                 player.sendMessage(cp + "Du musst in einer Party sein um diesen Befehl nutzen zu können!");
             break;
